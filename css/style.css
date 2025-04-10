@@ -4,7 +4,7 @@ body {
 }
   
 .container {
-    margin: 60px auto;
+    margin: 60px auto 30px;
     max-width: 600px;
 }
   
@@ -59,6 +59,10 @@ form {
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
+.hidden {
+    display: none;
+}
+
 a {
     color: #885df1;
 }
@@ -71,4 +75,19 @@ footer {
 
 .Typewriter__cursor {
     display: none;
+}
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+  
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
 }

@@ -7,11 +7,12 @@ function generatePoem(event) {
     let prompt = `Generate a short poem about ${userInstruction}.`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${encodeURIComponent(prompt)}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
-    document.querySelector("#result").innerHTML ="⏳ Wait a second... generating poem for you!";
+    document.querySelector("#result").classList.remove("hidden");
+    document.querySelector("#result").innerHTML =`<div class="generating">⏳ Wait a second... generating a poem for you!</div>`;
 
     axios.get(apiUrl).then(displayPoem).catch((error) => {
         document.querySelector("#result").innerHTML =
-          "⚠️ Failed to get a joke. Try again!";
+          "⚠️ Failed to generate a poem. Try again!";
         console.error(error);
     });
 }
