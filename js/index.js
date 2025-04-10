@@ -12,7 +12,7 @@ function generatePoem(event) {
 
     axios.get(apiUrl).then(displayPoem).catch((error) => {
         document.querySelector("#result").innerHTML =
-          "⚠️ Failed to generate a poem. Try again!";
+          "⚠️ Failed to generate poem. Try again!";
         console.error(error);
     });
 }
