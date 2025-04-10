@@ -25,8 +25,21 @@ form {
     background-color: white;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #272044;
+    margin-left: 5px;
+}
+
+.form-fields {
+    display: flex;
+    gap: 10px;
 }
   
 .instructions {

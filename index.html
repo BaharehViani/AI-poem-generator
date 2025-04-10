@@ -15,14 +15,19 @@
         </header>    
         <main>
             <form id="form">
-                <input class="instructions"
-                type="text" 
-                id="prompt" 
-                placeholder="Enter the topic of poem" 
-                autofocus 
-                required 
-                autocomplete="off">
-                <button type="submit" class="generate-btn ">Generate</button>
+                <div class="form-group">
+                    <label for="prompt" class="form-label">Enter the topic of the poem</label>
+                </div>
+                <div class="form-fields">
+                    <input class="instructions"
+                        type="text" 
+                        id="prompt" 
+                        placeholder="e.g. flower, moon, love, winter night..." 
+                        autofocus 
+                        required 
+                        autocomplete="off">
+                    <button type="submit" class="generate-btn">Generate</button>
+                </div>
             </form>
             <div class="poem hidden" id="result"></div>
         </main>
