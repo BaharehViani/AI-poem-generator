@@ -128,3 +128,8 @@ footer a:hover {
     visibility: hidden;
   }
 }
+
+.emoji {
+  width: 1.1em;
+  vertical-align: middle;
+}
